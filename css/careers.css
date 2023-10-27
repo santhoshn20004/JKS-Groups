@@ -71,8 +71,8 @@ body{
 }
 
 .home{
-    min-height: 70vh;
-    width: 100vw;
+    min-height: auto;
+    width: auto;
     background-image: url(../images/BANNER.png);
     background-size: cover;
     display: flex;
