@@ -94,7 +94,7 @@ body{
     color: white;
     background: #00bfff;
 }
-
+@media (min-width: 768px) {
 .header{
     display: flex;
     align-items: center;
@@ -107,13 +107,40 @@ body{
     z-index: 100;
     position: fixed;
 }
-
-.header .logo img{
-    width: 130%;
-    height: 3rem;
+}
+@media (max-width: 768px) {
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
+    position: fixed;
 }
+}
+@media (min-width: 768px) {
+    .header .logo img {
+      width: 130%; 
+      height: 3rem; 
+      top: 0; 
+      left: 0; 
+    }
+  }
+  
+
+  @media (max-width: 767px) {
+    .header .logo img {
+      width: 100%;
+      height: auto; 
+      
+    }
+  }
+  
+
 
 .header .navbar ul{
     list-style-type: none;
